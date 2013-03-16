@@ -36,8 +36,8 @@ void usage()
 			"scp file to remote:  sshlogin -t 2.2.2.2 /local/file\n"
 			"scp file to local:   sshlogin -r 2.2.2.2 /remote/file /local/\n"
 			"scp file to group:   sshlogin -T (test|all) /local/file\n"
-			"ssh a cmd in remote: sshlogin -x 2.2.2.2 \"ls /data1\"\n"
-			"ssh a cmd in group:  sshlogin -X (test|all) \"ls /data1\"\n"
+			"ssh a cmd on remote: sshlogin -x 2.2.2.2 \"ls /data1\"\n"
+			"ssh a cmd on group:  sshlogin -X (test|all) \"ls /data1\"\n"
 			"\n"
 			"warning: To save the parameters correctly, donot input '|'\n\n"
 			);

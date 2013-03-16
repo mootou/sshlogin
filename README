@@ -14,8 +14,8 @@ sshlogin support most operations on these servers
 	scp file to remote:  sshlogin -t 2.2.2.2 /local/file
 	scp file to local:   sshlogin -r 2.2.2.2 /remote/file /local/
 	scp file to a group: sshlogin -T (test|all) /local/file
-	ssh a cmd in remote: sshlogin -x 2.2.2.2 "ls /data1"
-	ssh a cmd in group:  sshlogin -X (test|all) "ls /data1"
+	ssh a cmd on remote: sshlogin -x 2.2.2.2 "ls /data1"
+	ssh a cmd on group:  sshlogin -X (test|all) "ls /data1"
 
 Please change USER and PASSWORD in sshlogin.c, then install
 
