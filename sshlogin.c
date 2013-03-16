@@ -29,15 +29,15 @@ struct record
 void usage()
 {
 	printf("\n"
-			"show all records:    sshlogin -s\n"
-			"choose a record:     sshlogin -c test\n"
-			"add a record:        sshlogin -a test 1.1.1.1 phy\n"
-			"add a lot records:   sshlogin -A test 1.1.1 1 3 phy\n"
-			"scp file to a ip:    sshlogin -t 2.2.2.2 /local/file\n"
-			"scp file to own:     sshlogin -r 2.2.2.2 /remote/file /local/\n"
-			"scp file to a group: sshlogin -T (test|all) /local/file\n"
+			"show all servers:    sshlogin -s\n"
+			"login a server:      sshlogin -c test\n"
+			"add a server:        sshlogin -a test 1.1.1.1 phy\n"
+			"add servers:         sshlogin -A test 1.1.1 1 3 phy\n"
+			"scp file to remote:  sshlogin -t 2.2.2.2 /local/file\n"
+			"scp file to local:   sshlogin -r 2.2.2.2 /remote/file /local/\n"
+			"scp file to group:   sshlogin -T (test|all) /local/file\n"
 			"ssh a cmd in remote: sshlogin -x 2.2.2.2 \"ls /data1\"\n"
-			"ssh a cmd in remote: sshlogin -X (test|all) \"ls /data1\"\n"
+			"ssh a cmd in group:  sshlogin -X (test|all) \"ls /data1\"\n"
 			"\n"
 			"warning: To save the parameters correctly, donot input '|'\n\n"
 			);
