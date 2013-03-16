@@ -8,14 +8,14 @@
 #include <stdio.h>
 #include <pthread.h>
 
-#define CONF	 "/home/.sshlogininfo"
-#define HOSTLIST "/home/.hostlist"
+#define CONF           "/home/.sshlogininfo"
+#define HOSTLIST       "/home/.hostlist"
 #define AUTO_ADD_HOST_KEY \
 	"-oUserKnownHostsFile=/dev/null -oStrictHostKeyChecking=no"
-#define USER     "test"
-#define PASSWORD "12345"
-#define BUF_SIZE 512
-#define MAX_BUF_SIZE 4096
+#define USER           "test"
+#define PASSWORD       "12345"
+#define BUF_SIZE       512
+#define MAX_BUF_SIZE   4096
 
 struct record
 {
