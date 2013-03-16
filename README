@@ -25,22 +25,22 @@ First, we must add servers to sshlogininfo, for convenience, you can directly ed
 	$ sshlogin -a group1 1.1.1.1 "give a note"
 		/*
 		$ sshlogin -c group1
-			num   	address    	group	note
-			1		1.1.1.1		group1	give a note
+			num   address   group   note
+			1     1.1.1.1   group1  give a note
 		*/
 
 	$ sshlogin -A group1 1.1.1 2 3 "add two servers to group1"
 		/*
 		$ sshlogin -c group1
-			num   	address    	group	note
-			1		1.1.1.1		group1	give a note
-			2		1.1.1.2		group1	add two servers to group1
-			2		1.1.1.3		group1	add two servers to group1
+			num   address   group   note
+			1     1.1.1.1   group1  give a note
+			2     1.1.1.2   group1  add two servers to group1
+			2     1.1.1.3   group1  add two servers to group1
 		*/
 	
-
 Second, we can use "sshlogin -c group" to login, as shown above
 
+Then,
 Scp (-r) localfile to the specified server:/home/USER/
 	$ sshlogin -t 1.1.1.1 localfile
 
