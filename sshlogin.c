@@ -504,5 +504,7 @@ int main(int argc, char **argv)
 	select_record();
 	ssh_exec();
 
+	pthread_mutex_destroy(&mutex);
+
 	return 0;
 }
