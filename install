@@ -1,0 +1,24 @@
+#!/bin/bash
+
+path=`pwd`
+
+echo "compile sshpass..."
+cd sshpass
+./configure
+make
+cd ..
+
+echo "create links..."
+if [ ! -f /usr/bin/sshpt ]
+then
+	ln -s $path/sshpt/sshpt.py /usr/bin/sshpt
+fi
+if [ ! -f /usr/bin/sshpass ]
+then
+	ln -s $path/sshpass/sshpass /usr/bin/sshpass
+fi
+
+echo "compile sshlogin..."
+make
+rm -f /usr/bin/sshlogin
+ln -s $path/sshlogin /usr/bin/sshlogin
